@@ -1,0 +1,17 @@
+import math as m
+# Ввести свои данные
+x1 = 0
+xn = 2
+step_x = 0.1
+a = 2.1
+b = 0.3
+
+
+def fx(x):
+    return m.cos(a * x**2) / 1 + m.tan(b * x) 
+
+
+n = x1
+while not n > xn:
+    n += step_x
+    print('x= ', round(n, 3), 'f(x) = ', round(fx(n), 7))
