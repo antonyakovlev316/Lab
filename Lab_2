@@ -19,7 +19,7 @@ def fx3(x):
     return x**y
 
 
-# Выбор f(x) с проверкой на ошибки
+
 while b:
     gh = input('f1 == 1, f2 == 2, f3 == 3: ')
     if gh == '1':
@@ -34,11 +34,11 @@ while b:
     else:
         print('Invalid input')
         gh = ''
-# Определение расчета переменной "c"
+
 if hp1:
-    c = (math.tan(x)+x/y**1/2)     # Введите свой расчет "с" с первым условием
+    c = (math.tan(x)+x/y**1/2)
 elif hp2:
-    c = m.log10(x**2)*y # Введите свой расчет "с" со вторым условием
+    c = m.log10(x**2)*y
 else:
-    c = x**2 + m.sin(y)  # расчет "с" если не подошли оба условия
+    c = x**2 + m.sin(y)
 print('c=', c)
