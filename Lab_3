@@ -1,4 +1,5 @@
 import math as m
+import numpy as np
 # Ввести свои данные
 x1 = 0
 xn = 2
@@ -8,10 +9,13 @@ b = 0.3
 
 
 def fx(x):
-    return m.cos(a * x**2) / 1 + m.tan(b * x) 
+    return m.cos(a * x**2) / 1 + m.tan(b * x)
 
 
 n = x1
 while not n > xn:
     n += step_x
     print('x= ', round(n, 3), 'f(x) = ', round(fx(n), 7))
+
+for i in np.arange(x1, xn, step_x):
+    print('x=', round(i, 3), 'f(x) = ', round(fx(i), 7))
